@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/my_app_portfolio" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spotify_streamer"
+        android:id="@+id/btnSpotify"
+        android:layout_above="@+id/btnScoresApp"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendSpotifyMessage"
+        android:clickable="true"
+        android:minWidth="@dimen/abc_action_button_min_width_material" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scores_app"
+        android:id="@+id/btnScoresApp"
+        android:layout_above="@+id/btnLibraryApp"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendScoresMessage"
+        android:minWidth="@dimen/abc_action_button_min_width_material" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/library_app"
+        android:id="@+id/btnLibraryApp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendLibraryMessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/build_it_bigger"
+        android:id="@+id/btnBiggerApp"
+        android:layout_below="@+id/btnLibraryApp"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendBiggerMessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xyz_reader"
+        android:id="@+id/btnXYZApp"
+        android:layout_below="@+id/btnBiggerApp"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendXYZMessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_own_app"
+        android:id="@+id/btnMyOwnApp"
+        android:layout_below="@+id/btnXYZApp"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendMyAppMessage"/>
+
+</RelativeLayout>
